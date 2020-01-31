@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  重量单位  -->
+    <string-array name="zldw">
+        <item>Kg</item>
+        <item>吨</item>
+    </string-array>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/iv_sprk_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/banana"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_sprk_mc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="香蕉"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_sprk_cd"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="产地：江西省南昌市"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_sprk_zl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="重量：100kg"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:background="@drawable/bg_amount_layout"
+                android:divider="@drawable/divider"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/btn_sprk_decrease"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:background="@drawable/btn_amount"-->
+                <!--                    android:text="-"/>-->
+
+                <EditText
+                    android:id="@+id/et_sprk_count"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="28"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="number|numberDecimal"
+                    android:minWidth="60dp"
+                    android:text="0" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:orientation="vertical">
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="match_parent"-->
+                    <!--                        android:layout_marginTop="3dp"-->
+                    <!--                        android:text="Kg" />-->
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!--                                <TextView-->
+                <!--                                    android:layout_width="wrap_content"-->
+                <!--                                    android:layout_height="match_parent"-->
+                <!--                                    android:layout_marginTop="3dp"-->
+                <!--                                    android:text="Kg" />-->
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/btn_sprk_increase"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:background="@drawable/btn_amount"-->
+                <!--                    android:text="+"/>-->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
